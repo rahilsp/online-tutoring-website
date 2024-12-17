@@ -1,77 +1,103 @@
 /* General Styles */
-body, h1, h2, p {
+body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
-body {
-    line-height: 1.6;
+h1, h2, h3 {
+    margin: 0;
+    color: #333;
 }
 
 .container {
     width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: auto;
     text-align: center;
 }
 
-/* Header */
-header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 2rem 0;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-header h1 {
+/* Hero Section */
+.hero {
+    background: url('https://www.corporatevision-news.com/wp-content/uploads/2020/07/online-learning-1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
     font-size: 2.5rem;
 }
 
-header p {
+.hero p {
+    margin: 1rem 0;
     font-size: 1.2rem;
 }
 
-/* Navigation */
-nav {
-    background: #333;
-    padding: 1rem 0;
+/* Features */
+.features {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.feature-box div {
+    flex: 1;
     margin: 0 1rem;
 }
 
-/* Sections */
-section {
-    margin: 2rem 0;
+/* Testimonials */
+.testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    color: #555;
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    color: #4CAF50;
+/* FAQ */
+.faq details {
+    margin: 1rem 0;
+    cursor: pointer;
 }
 
-form input, form textarea {
-    width: 80%;
-    padding: 0.5rem;
+.faq summary {
+    font-weight: bold;
+}
+
+/* Contact */
+.contact form input, 
+.contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
     margin: 0.5rem 0;
     border: 1px solid #ddd;
 }
 
-form button {
-    background: #4CAF50;
-    color: #fff;
+.contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
     border: none;
-    padding: 0.7rem 1.5rem;
     cursor: pointer;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: white;
     padding: 1rem 0;
-    text-align: center;
 }
